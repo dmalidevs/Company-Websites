@@ -1,0 +1,55 @@
+#footer ul li{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+#footer ul li .far,
+#footer ul li .fas,
+#footer ul li .fab,
+#footer ul li .fa-brands{
+	font-size: 1em;
+	color: var(--clr);
+}
+#footer ul li:before{
+	font-family: fontAwesome;
+	position: absolute;
+	inset:0;
+	width: 100%;
+	font-size: 1em;
+	height: 0;
+	overflow: hidden;
+	transition: 0.4s ease-in-out;
+	text-align: center;
+	line-height:39px;
+	color: black;
+	border-bottom: 2px solid black;/*var(--clr);*/
+}
+
+#footer ul li:nth-child(1):before{
+	content: '\f0d5';
+}
+#footer ul li:nth-child(2):before{
+	content: '\f39e';
+}
+#footer ul li:nth-child(3):before{
+	content: '\f0d3';
+}
+#footer ul li:nth-child(4):before{
+	content: '\f099';
+}
+#footer ul li:nth-child(5):before{
+	content: '\f167';
+}
+#footer ul li:nth-child(6):before{
+	content: '\f08c';
+}
+#footer ul li:hover:before{
+	height: 100%;
+	border-bottom:2px solid var(--clr);
+}
